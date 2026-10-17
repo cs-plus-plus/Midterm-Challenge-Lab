@@ -33,7 +33,7 @@ jobs:
 
       - name: 'Movie constructor and validation'
         id: movie-constructor-and-validation
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'Movie constructor and validation'
           setup-command: 'mvn -B -q compile'
@@ -43,7 +43,7 @@ jobs:
 
       - name: 'Movie setters'
         id: movie-setters
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'Movie setters'
           setup-command: 'mvn -B -q compile'
@@ -53,7 +53,7 @@ jobs:
 
       - name: 'Movie toString'
         id: movie-tostring
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'Movie toString'
           setup-command: 'mvn -B -q compile'
@@ -63,7 +63,7 @@ jobs:
 
       - name: 'MovieLibrary add and size'
         id: movielibrary-add-and-size
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'MovieLibrary add and size'
           setup-command: 'mvn -B -q compile'
@@ -73,7 +73,7 @@ jobs:
 
       - name: 'MovieLibrary find and remove'
         id: movielibrary-find-and-remove
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'MovieLibrary find and remove'
           setup-command: 'mvn -B -q compile'
@@ -83,7 +83,7 @@ jobs:
 
       - name: 'MovieLibrary averageRating'
         id: movielibrary-averagerating
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'MovieLibrary averageRating'
           setup-command: 'mvn -B -q compile'
@@ -93,7 +93,7 @@ jobs:
 
       - name: 'MovieLibrary longestRuntime'
         id: movielibrary-longestruntime
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'MovieLibrary longestRuntime'
           setup-command: 'mvn -B -q compile'
@@ -103,7 +103,7 @@ jobs:
 
       - name: 'MovieLibrary ratedAtLeast'
         id: movielibrary-ratedatleast
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'MovieLibrary ratedAtLeast'
           setup-command: 'mvn -B -q compile'
@@ -112,7 +112,7 @@ jobs:
           max-score: 15
 
       - name: Autograding Reporter
-        uses: classroom-resources/autograding-grading-reporter@v1
+        uses: cs-plus-plus/autograding-grading-reporter@v1
         env:
           MOVIE-CONSTRUCTOR-AND-VALIDATION_RESULTS: "${{steps.movie-constructor-and-validation.outputs.result}}"
           MOVIE-SETTERS_RESULTS: "${{steps.movie-setters.outputs.result}}"
